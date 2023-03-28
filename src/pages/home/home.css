@@ -1,0 +1,175 @@
+body {
+    background-color: #14BDAC;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .title {
+    margin-top: 40px;
+    font-size: 4em;
+    color: whitesmoke;
+  }
+  
+  .board {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #14bdac;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .row_middle{
+    border-top: 10px solid #444;
+    border-bottom: 10px solid #444;
+  }
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #14bdacff;
+  }
+  
+  .square_middle{
+      border-left: 10px solid #444;
+      border-right: 10px solid #444;
+  }
+  
+  .square:hover {
+    background-color: #87E9DF;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  }
+  
+  .x {
+    color: #c0392b;
+  }
+  
+  .o {
+    color: #2980b9;
+  }
+
+  button {
+    background-color: #6c757d;
+    border: none;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+button.newGame  {
+    background-color: #506070;
+}
+
+button.endGame  {
+  background-color: #bd1d25;
+}
+
+button.newGame:hover  {
+    background-color: #1b2229;
+}
+
+button.enterGame  {
+    background-color: #255bac;
+    margin-right: 3%;
+}
+
+button.enterGame:hover  {
+    background-color: #0d6efd;
+}
+  
+  button:hover {
+    background-color: #087F8C;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  }
+
+  .modal {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-fundo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-corpo {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 30vh;
+  }
+
+  input[type="text"] {
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.3);
+    margin-bottom: 3%;
+  }
+
+  .copy-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0d6efd;
+    border-radius: 6px;
+    padding: 3%;
+    margin-bottom: 2%;
+    justify-content: space-between;
+  }
+    
+  .copy{
+    cursor: pointer;
+  }
+
+  .codCopied{
+    color: green;
+    font-size: 0.7rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    button {
+      font-size: 4vw; 
+      padding: 2vw 4vw;
+    }
+
+    .title {
+      margin-top: 40px;
+      font-size: 2em;
+    }
+
+    body {
+      overflow-y: hidden;
+    }
+  }
